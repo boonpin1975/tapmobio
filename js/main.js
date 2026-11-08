@@ -99,28 +99,74 @@ function animateCounter(el, target, duration = 1500) {
 /* ---- Contact form submission handler ---- */
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', function (e) {
+  contactForm.addEventListener('submit', async function (e) {
     e.preventDefault();
+
     const btn = this.querySelector('button[type="submit"]');
     const originalText = btn.textContent;
+    const formNote = this.querySelector('.form-note');
+
+    // Collect form data
+    const data = {
+      name: this.querySelector('#name').value.trim(),
+      email: this.querySelector('#email').value.trim(),
+      project: this.querySelector('#project').value,
+      message: this.querySelector('#message').value.trim(),
+      _subject: 'New enquiry from Tapmobio website',
+      _template: 'table',
+      _captcha: 'false'
+    };
+
+    // Basic validation
+    if (!data.name || !data.email || !data.message) {
+      formNote.textContent = '⚠️ Please fill in all required fields.';
+      formNote.style.color = '#F87171';
+      return;
+    }
 
     btn.textContent = '⏳ Sending...';
     btn.disabled = true;
+    formNote.textContent = 'Sending your message...';
+    formNote.style.color = '';
 
-    // Simulate async submission
-    setTimeout(() => {
-      btn.textContent = '✅ Message Sent!';
-      btn.style.background = 'linear-gradient(135deg, #10B981, #06B6D4)';
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/tapmobio75@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
 
-      // Reset form
-      this.reset();
+      const result = await res.json();
 
+      if (res.ok && result.success === 'true') {
+        // Success
+        btn.textContent = '✅ Message Sent!';
+        btn.style.background = 'linear-gradient(135deg, #10B981, #06B6D4)';
+        formNote.textContent = '🎉 Thanks! We\'ll reply within 24 hours.';
+        formNote.style.color = '#34D399';
+        contactForm.reset();
+      } else {
+        throw new Error(result.message || 'Submission failed');
+      }
+    } catch (err) {
+      // Error state
+      btn.textContent = '❌ Failed — Try Again';
+      btn.style.background = 'linear-gradient(135deg, #EF4444, #F97316)';
+      formNote.textContent = '⚠️ Something went wrong. Please email us at tapmobio75@gmail.com';
+      formNote.style.color = '#F87171';
+    } finally {
+      btn.disabled = false;
+      // Reset button style after 4s
       setTimeout(() => {
         btn.textContent = originalText;
         btn.style.background = '';
-        btn.disabled = false;
-      }, 4000);
-    }, 1500);
+        formNote.textContent = 'We reply within 24 hours on business days.';
+        formNote.style.color = '';
+      }, 5000);
+    }
   });
 }
 
