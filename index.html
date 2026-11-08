@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tapmobio — Android App Developers</title>
+  <meta name="description" content="Tapmobio is a passionate Android app development studio crafting beautiful, high-performance mobile experiences." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======================== NAV ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">📱</span>
+        <span class="logo-text">tapmobio</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#contact" class="btn btn-sm">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="badge">🤖 Android App Developers</span>
+        <h1 class="hero-title">
+          We Build Apps<br/>
+          <span class="gradient-text">People Love to Use</span>
+        </h1>
+        <p class="hero-subtitle">
+          Tapmobio is a dedicated Android development studio. We craft fast, beautiful, and intuitive mobile applications that solve real problems and delight users.
+        </p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+          <a href="#contact" class="btn btn-outline">Start a Project</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Apps Shipped</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">1M+</span>
+            <span class="stat-label">Downloads</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">5★</span>
+            <span class="stat-label">Avg. Rating</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="app-ui">
+                <div class="app-status-bar"></div>
+                <div class="app-header">
+                  <div class="app-avatar"></div>
+                  <div class="app-header-text">
+                    <div class="line short"></div>
+                    <div class="line xshort"></div>
+                  </div>
+                </div>
+                <div class="app-card card-green">
+                  <div class="card-icon">💰</div>
+                  <div class="card-lines">
+                    <div class="line medium"></div>
+                    <div class="line short"></div>
+                  </div>
+                </div>
+                <div class="app-card-row">
+                  <div class="app-card-sm card-purple">
+                    <div class="card-icon">📊</div>
+                    <div class="line short" style="margin-top:8px"></div>
+                  </div>
+                  <div class="app-card-sm card-orange">
+                    <div class="card-icon">🛍️</div>
+                    <div class="line short" style="margin-top:8px"></div>
+                  </div>
+                </div>
+                <div class="app-list">
+                  <div class="list-item"><div class="list-dot"></div><div class="line long"></div></div>
+                  <div class="list-item"><div class="list-dot"></div><div class="line medium"></div></div>
+                  <div class="list-item"><div class="list-dot"></div><div class="line long"></div></div>
+                </div>
+                <div class="app-nav-bar">
+                  <span>🏠</span><span>🔍</span><span>❤️</span><span>👤</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-badge">About Us</span>
+          <h2 class="section-title">Passionate About Mobile, Obsessed with Quality</h2>
+          <p class="section-text">
+            At Tapmobio, we live and breathe Android. Our team of experienced developers, designers, and QA engineers work together to deliver mobile experiences that stand out in the Google Play Store.
+          </p>
+          <p class="section-text">
+            From startup MVPs to enterprise-grade solutions, we bring the same commitment to clean architecture, smooth performance, and beautiful UI to every project we touch.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <div>
+                <strong>Clean Architecture</strong>
+                <p>MVVM, Clean Architecture, and Jetpack best practices in every project.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <div>
+                <strong>Play Store Ready</strong>
+                <p>We handle submission, review cycles, and optimizing for discoverability.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <div>
+                <strong>Ongoing Support</strong>
+                <p>We don't disappear after launch. Long-term partnership is our model.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="about-card card-teal">
+            <div class="about-card-icon">🚀</div>
+            <h3>Fast Delivery</h3>
+            <p>Agile sprints keep projects on track and clients in the loop.</p>
+          </div>
+          <div class="about-card card-indigo">
+            <div class="about-card-icon">🎨</div>
+            <h3>UI / UX First</h3>
+            <p>Material Design 3 and custom UI that users instantly love.</p>
+          </div>
+          <div class="about-card card-pink">
+            <div class="about-card-icon">🔒</div>
+            <h3>Secure & Scalable</h3>
+            <p>Built with security, privacy, and growth baked in from day one.</p>
+          </div>
+          <div class="about-card card-amber">
+            <div class="about-card-icon">🌍</div>
+            <h3>Global Reach</h3>
+            <p>Localization support so your app works worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SERVICES ======================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">What We Do</span>
+        <h2 class="section-title">Our Android Services</h2>
+        <p class="section-subtitle">End-to-end Android development tailored to your vision and goals.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Native Android Development</h3>
+          <p>Pure Kotlin development using the latest Jetpack Compose, modern Jetpack libraries, and Google's recommended architecture patterns.</p>
+          <ul class="service-tags">
+            <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="service-badge-top">Most Popular</div>
+          <div class="service-icon">🏗️</div>
+          <h3>Full-Stack App Development</h3>
+          <p>Android front-end paired with a robust backend (Firebase, Node.js, or REST APIs) for a complete, production-ready product.</p>
+          <ul class="service-tags">
+            <li>Firebase</li><li>REST API</li><li>Cloud</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔄</div>
+          <h3>App Migration & Modernization</h3>
+          <p>Migrate legacy Java apps to Kotlin, upgrade XML layouts to Jetpack Compose, and modernize old architectures.</p>
+          <ul class="service-tags">
+            <li>Java → Kotlin</li><li>Compose</li><li>Refactor</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧪</div>
+          <h3>QA & Testing</h3>
+          <p>Comprehensive automated testing suites — unit tests, integration tests, and end-to-end UI tests — for bulletproof reliability.</p>
+          <ul class="service-tags">
+            <li>JUnit</li><li>Espresso</li><li>Mockk</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Play Store Optimization</h3>
+          <p>ASO, screenshots, metadata, and release management to maximize your app's visibility and conversion rate on Google Play.</p>
+          <ul class="service-tags">
+            <li>ASO</li><li>Analytics</li><li>A/B Testing</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
+          <h3>Consulting & Code Review</h3>
+          <p>Architecture reviews, performance audits, and strategic guidance to level up your existing Android engineering team.</p>
+          <ul class="service-tags">
+            <li>Architecture</li><li>Performance</li><li>Security</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PORTFOLIO ======================== -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Work</span>
+        <h2 class="section-title">Apps We've Built</h2>
+        <p class="section-subtitle">A snapshot of the Android apps we've shipped for clients across industries.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-visual pv-finance">
+            <div class="pv-icon">💳</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Finance</span>
+            <h3>WalletWise</h3>
+            <p>Personal budgeting app with real-time expense tracking, visual analytics, and smart savings goals.</p>
+            <div class="portfolio-meta">
+              <span>⭐ 4.8</span>
+              <span>📥 200K+ downloads</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-visual pv-health">
+            <div class="pv-icon">🏃</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Health & Fitness</span>
+            <h3>FitPulse</h3>
+            <p>Workout planner and tracker with AI-generated programs, wearable sync, and social challenges.</p>
+            <div class="portfolio-meta">
+              <span>⭐ 4.9</span>
+              <span>📥 350K+ downloads</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-visual pv-ecom">
+            <div class="pv-icon">🛒</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">E-Commerce</span>
+            <h3>ShopDash</h3>
+            <p>Multi-vendor marketplace app with real-time inventory, push notifications, and seamless checkout.</p>
+            <div class="portfolio-meta">
+              <span>⭐ 4.7</span>
+              <span>📥 150K+ downloads</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-visual pv-edu">
+            <div class="pv-icon">📚</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Education</span>
+            <h3>LearnLoop</h3>
+            <p>Spaced-repetition flashcard app with offline mode, progress tracking, and gamified learning paths.</p>
+            <div class="portfolio-meta">
+              <span>⭐ 4.8</span>
+              <span>📥 90K+ downloads</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-visual pv-social">
+            <div class="pv-icon">💬</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Social</span>
+            <h3>NearBy</h3>
+            <p>Location-based community app connecting neighbors for events, listings, and local services.</p>
+            <div class="portfolio-meta">
+              <span>⭐ 4.6</span>
+              <span>📥 120K+ downloads</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-visual pv-productivity">
+            <div class="pv-icon">✅</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Productivity</span>
+            <h3>TaskFlow</h3>
+            <p>Team task management with Kanban boards, time tracking, and deep Google Workspace integration.</p>
+            <div class="portfolio-meta">
+              <span>⭐ 4.9</span>
+              <span>📥 80K+ downloads</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== TECH STACK ======================== -->
+  <section class="section tech" id="tech">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Technology</span>
+        <h2 class="section-title">Our Tech Stack</h2>
+        <p class="section-subtitle">We use the best tools the Android ecosystem has to offer.</p>
+      </div>
+      <div class="tech-categories">
+        <div class="tech-category">
+          <h4>Languages & Frameworks</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">Kotlin</span>
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Jetpack Compose</span>
+            <span class="tech-pill">XML Layouts</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Architecture & Patterns</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">MVVM</span>
+            <span class="tech-pill">MVI</span>
+            <span class="tech-pill">Clean Architecture</span>
+            <span class="tech-pill">Repository Pattern</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Jetpack Libraries</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">Room</span>
+            <span class="tech-pill">Navigation</span>
+            <span class="tech-pill">WorkManager</span>
+            <span class="tech-pill">DataStore</span>
+            <span class="tech-pill">Paging 3</span>
+            <span class="tech-pill">Hilt / Dagger</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Networking & Backend</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">Retrofit</span>
+            <span class="tech-pill">OkHttp</span>
+            <span class="tech-pill">Firebase</span>
+            <span class="tech-pill">GraphQL</span>
+            <span class="tech-pill">WebSocket</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Testing</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">JUnit 5</span>
+            <span class="tech-pill">Espresso</span>
+            <span class="tech-pill">Mockk</span>
+            <span class="tech-pill">Turbine</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Tools & CI/CD</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">Android Studio</span>
+            <span class="tech-pill">Gradle</span>
+            <span class="tech-pill">GitHub Actions</span>
+            <span class="tech-pill">Firebase App Distribution</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROCESS ======================== -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">How We Work</span>
+        <h2 class="section-title">Our Development Process</h2>
+        <p class="section-subtitle">A transparent, collaborative workflow from idea to Play Store.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Discovery & Planning</h3>
+            <p>We deep-dive into your idea, users, and business goals to define scope, wireframes, and a clear roadmap.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>UI/UX Design</h3>
+            <p>High-fidelity Figma prototypes with Material Design 3 — reviewed and refined with your feedback.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Agile Development</h3>
+            <p>2-week sprints with live demo builds so you always see real progress and can steer early.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>QA & Launch</h3>
+            <p>Thorough testing, Play Store submission, and a smooth go-live. Then we're with you for the long run.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA BANNER ======================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Build Your Android App?</h2>
+        <p>Tell us about your project and let's turn your idea into an app people will download, use, and love.</p>
+        <a href="#contact" class="btn btn-primary btn-lg">Get a Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="section-text">Have an app idea? Want to modernize an existing product? Or just want to talk Android? We'd love to hear from you.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p>hello@tapmobio.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">💬</span>
+              <div>
+                <strong>WhatsApp / Telegram</strong>
+                <p>+1 (555) TAP-MOBI</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">🌐</span>
+              <div>
+                <strong>Social</strong>
+                <p>@tapmobio on GitHub, LinkedIn &amp; Twitter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="project">Project Type</label>
+            <select id="project">
+              <option value="">Select a service...</option>
+              <option>Native Android Development</option>
+              <option>Full-Stack App Development</option>
+              <option>App Migration & Modernization</option>
+              <option>QA & Testing</option>
+              <option>Play Store Optimization</option>
+              <option>Consulting & Code Review</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" rows="5" placeholder="Describe your app idea, goals, timeline, and budget..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message 🚀</button>
+          <p class="form-note">We reply within 24 hours on business days.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">📱</span>
+            <span class="logo-text">tapmobio</span>
+          </a>
+          <p>Your dedicated Android app development partner. We build apps people love.</p>
+        </div>
+        <div class="footer-links-group">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Native Android</a></li>
+            <li><a href="#services">Full-Stack Apps</a></li>
+            <li><a href="#services">App Migration</a></li>
+            <li><a href="#services">QA & Testing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h5>Tech</h5>
+          <ul>
+            <li><a href="#tech">Kotlin</a></li>
+            <li><a href="#tech">Jetpack Compose</a></li>
+            <li><a href="#tech">Firebase</a></li>
+            <li><a href="#tech">Clean Architecture</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tapmobio. All rights reserved.</p>
+        <p>Built with ❤️ for the Android ecosystem</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
